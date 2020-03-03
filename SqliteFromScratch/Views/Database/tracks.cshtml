@@ -1,0 +1,9 @@
+@model List<SqliteFromScratch.Track>
+
+
+
+@foreach (Track track in Model)
+{
+    <p>Name @(track.Name)</p>
+    <p>Artist @(track.Composer)</p>
+}

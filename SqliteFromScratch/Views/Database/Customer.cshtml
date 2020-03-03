@@ -1,0 +1,6 @@
+@model List<SqliteFromScratch.Customer>
+
+@foreach (Customer customer in Model)
+{
+    <p>Name @(customer.FirstName) @(customer.LastName)</p>
+}

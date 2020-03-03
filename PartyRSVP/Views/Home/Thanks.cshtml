@@ -1,0 +1,19 @@
+@model PartyRSVP.Models.GuestResponse
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thank You</title>
+</head>
+<body>
+    <div class="row">
+        <div class="align-self-center col text-center">
+            <h1>Thanks, @Model.FullName()!</h1>
+            <p>If we need you to bring anything we will email you at @Model.Email</p>
+        </div>
+    </div>
+</body>
